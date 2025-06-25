@@ -27,7 +27,7 @@ const PlaywrightPortfolio = () => {
     {
       icon: <Play className="w-6 h-6" />,
       title: 'Playwright テスト実行',
-      description: '並列実行による高速テストの様子',
+      description: 'ブラウザ操作の自動化テスト',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop'
     },
     {
@@ -41,8 +41,7 @@ const PlaywrightPortfolio = () => {
   const learningPoints = [
     'E2Eテストの設計から実装までの実践的なスキル習得',
     'CI/CDパイプラインの構築と運用',
-    '品質保証の自動化の重要性を深く理解',
-    'Playwright の並列実行による効率化テクニック'
+    '品質保証の自動化の重要性を深く理解'
   ];
 
   return (
@@ -83,7 +82,7 @@ const PlaywrightPortfolio = () => {
           <div className="bg-white/15 backdrop-blur-2xl border border-white/25 rounded-3xl p-12 shadow-2xl hover:bg-white/20 transition-all duration-500">
             <div className="inline-flex items-center gap-2 bg-cyan-400/30 backdrop-blur-lg border border-white/30 text-white px-4 py-2 rounded-full mb-6">
               <Zap className="w-4 h-4" />
-              <span className="text-sm font-medium">AIエンジニアの実践環境</span>
+              <span className="text-sm font-medium">with AIエンジニアの実践環境</span>
             </div>
             
             <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-2xl">
