@@ -214,10 +214,22 @@ const PlaywrightPortfolio = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-white/80 leading-relaxed">{achievement.description}</p>
-                  <Button className="w-full mt-4 bg-cyan-400/30 hover:bg-cyan-400/40 backdrop-blur-lg border border-white/30 text-white">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    詳細を見る
-                  </Button>
+                  {index === 0 ? (
+                    <a
+                      href="/video/testing-movie-with-playwright.mov"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full mt-4 bg-cyan-400/30 hover:bg-cyan-400/40 backdrop-blur-lg border border-white/30 text-white flex items-center justify-center px-4 py-2 rounded-lg transition-all duration-300"
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      詳細を見る
+                    </a>
+                  ) : (
+                    <Button className="w-full mt-4 bg-cyan-400/30 hover:bg-cyan-400/40 backdrop-blur-lg border border-white/30 text-white">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      詳細を見る
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}
