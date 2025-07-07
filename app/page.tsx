@@ -20,6 +20,7 @@ const PlaywrightPortfolio = () => {
     { name: 'TypeScript', icon: 'TS', color: 'from-blue-400 to-blue-600', isEmoji: false },
     { name: 'Playwright', icon: '🎭', color: 'from-green-400 to-green-600', isEmoji: true },
     { name: 'Tailwind', icon: 'TW', color: 'from-cyan-400 to-cyan-600', isEmoji: false },
+    { name: 'Shadcn/ui', icon: 'UI', color: 'from-slate-400 to-slate-600', isEmoji: false },
     { name: 'GitHub Actions', icon: '⚡', color: 'from-purple-400 to-purple-600', isEmoji: true }
   ];
 
@@ -82,7 +83,7 @@ const PlaywrightPortfolio = () => {
           <div className="bg-white/15 backdrop-blur-2xl border border-white/25 rounded-3xl p-12 shadow-2xl hover:bg-white/20 transition-all duration-500">
             <div className="inline-flex items-center gap-2 bg-cyan-400/30 backdrop-blur-lg border border-white/30 text-white px-4 py-2 rounded-full mb-6">
               <Zap className="w-4 h-4" />
-              <span className="text-sm font-medium">with AIエンジニアの実践環境</span>
+              <span className="text-sm font-medium">AIネイティブ開発者</span>
             </div>
             
             <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-2xl">
