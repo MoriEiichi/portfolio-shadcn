@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { Dialog, DialogTrigger, DialogContent } from '@/components/ui/dialog';
 import { 
   Github, 
   ExternalLink, 
@@ -216,15 +217,22 @@ const PlaywrightPortfolio = () => {
                 <CardContent>
                   <p className="text-white/80 leading-relaxed">{achievement.description}</p>
                   {index === 0 ? (
-                    <a
-                      href="/video"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full mt-4 bg-cyan-400/30 hover:bg-cyan-400/40 backdrop-blur-lg border border-white/30 text-white flex items-center justify-center px-4 py-2 rounded-lg transition-all duration-300"
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      詳細を見る
-                    </a>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button className="w-full mt-4 bg-cyan-400/30 hover:bg-cyan-400/40 backdrop-blur-lg border border-white/30 text-white">
+                          <ExternalLink className="w-4 h-4 mr-2" />
+                          動画を見る
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-2xl">
+                        <div className="w-full flex flex-col items-center">
+                          <video controls style={{ maxWidth: '100%', maxHeight: '70vh', background: '#000' }}>
+                            <source src="/video/testing-movie-with-playwright.webm" type="video/webm" />
+                            お使いのブラウザは動画再生に対応していません。
+                          </video>
+                        </div>
+                      </DialogContent>
+                    </Dialog>
                   ) : (
                     <Button className="w-full mt-4 bg-cyan-400/30 hover:bg-cyan-400/40 backdrop-blur-lg border border-white/30 text-white">
                       <ExternalLink className="w-4 h-4 mr-2" />
