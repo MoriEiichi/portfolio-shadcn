@@ -68,10 +68,17 @@ const PlaywrightPortfolio = () => {
               </div>
               
               <div className="flex items-center gap-4">
-                <Button className="bg-cyan-400/30 hover:bg-cyan-400/40 backdrop-blur-lg border border-white/30 text-white transition-all duration-300 hover:scale-105 shadow-lg">
-                  <Github className="w-4 h-4 mr-2" />
-                  GitHub
-                </Button>
+                <a
+                  href="https://github.com/MoriEiichi/my-playwright-test"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <Button className="bg-cyan-400/30 hover:bg-cyan-400/40 backdrop-blur-lg border border-white/30 text-white transition-all duration-300 hover:scale-105 shadow-lg">
+                    <Github className="w-4 h-4 mr-2" />
+                    GitHub
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -100,10 +107,17 @@ const PlaywrightPortfolio = () => {
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-white/20 hover:bg-white/30 backdrop-blur-lg border border-white/30 text-white px-8 py-4 text-lg font-semibold">
-                <Github className="w-5 h-5 mr-2" />
-                ソースコード
-              </Button>
+              <a
+                href="https://github.com/MoriEiichi/my-playwright-test"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button className="bg-white/20 hover:bg-white/30 backdrop-blur-lg border border-white/30 text-white px-8 py-4 text-lg font-semibold">
+                  <Github className="w-5 h-5 mr-2" />
+                  ソースコード
+                </Button>
+              </a>
             </div>
           </div>
         </div>
