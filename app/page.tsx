@@ -35,7 +35,7 @@ const PlaywrightPortfolio = () => {
     {
       icon: <GitBranch className="w-6 h-6" />,
       title: 'GitHub Actions',
-      description: '自動テスト実行とデプロイの流れ',
+      description: 'GitHub Actionsでの自動テスト実行（build・deployステップは現在ダミー）',
       image: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=250&fit=crop'
     }
   ];
