@@ -59,12 +59,22 @@ const PlaywrightPortfolio = () => {
       <nav className="relative z-10 p-6">
         <div className="max-w-6xl mx-auto">
           <div className="bg-white/15 backdrop-blur-2xl border border-white/25 rounded-2xl px-6 py-4 shadow-xl">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+              <div className="flex flex-col md:flex-row items-center gap-3">
                 <div className="w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center shadow-lg">
                   <TestTube className="w-6 h-6 text-white" />
                 </div>
-                <h1 className="text-xl font-bold text-white">Playwright Testing Portfolio</h1>
+                <div className="text-center md:text-left">
+                  <h1 className="text-2xl md:text-3xl font-bold text-white mb-1">
+                    森 英一
+                  </h1>
+                  <p className="text-lg md:text-xl text-white/80 font-medium">
+                    Eiichi MORI
+                  </p>
+                  <h2 className="text-sm md:text-base text-white/70 mt-1">
+                    Playwright Testing Portfolio
+                  </h2>
+                </div>
               </div>
               
               <div className="flex items-center gap-4">
