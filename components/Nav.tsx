@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Github } from "lucide-react";
+import { Github, Mail } from "lucide-react";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,15 +24,23 @@ export function Nav() {
         <span className="font-display text-sm font-semibold tracking-tight text-white">
           Eiichi Mori
         </span>
-        <a
-          href="https://github.com/MoriEiichi/my-playwright-test"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
-        >
-          <Github className="w-4 h-4" />
-          <span className="hidden sm:inline">GitHub</span>
-        </a>
+        <div className="flex items-center gap-4">
+          <a
+            href="mailto:mori@morieiichi.com"
+            className="text-sm text-slate-400 hover:text-white transition-colors"
+          >
+            <Mail className="w-4 h-4" />
+          </a>
+          <a
+            href="https://github.com/MoriEiichi/my-playwright-test"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
+          >
+            <Github className="w-4 h-4" />
+            <span className="hidden sm:inline">GitHub</span>
+          </a>
+        </div>
       </div>
     </nav>
   );
