@@ -2,78 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* フロスティ・ブルー用のCSS変数 */
 :root {
-  /* フロスティ・ブルー カラーパレット */
-  --frosty-cyan: #22d3ee;
-  --frosty-blue: #3b82f6;
-  --frosty-indigo: #4f46e5;
-  
-  /* 背景グラデーション */
-  --frosty-bg-gradient: linear-gradient(135deg, #22d3ee, #3b82f6, #4f46e5);
-  
-  /* ガラス効果 */
-  --frosty-glass-bg: rgba(255, 255, 255, 0.15);
-  --frosty-glass-border: rgba(255, 255, 255, 0.25);
-  --frosty-glass-blur: blur(32px);
-  
-  /* アクセントカラー */
-  --frosty-accent-normal: rgba(34, 211, 238, 0.3);
-  --frosty-accent-hover: rgba(34, 211, 238, 0.4);
-  
-  /* テキストカラー */
-  --frosty-text-primary: #ffffff;
-  --frosty-text-secondary: rgba(255, 255, 255, 0.8);
-  --frosty-text-muted: rgba(255, 255, 255, 0.6);
+  /* Dark theme palette */
+  --bg-primary: #020617;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-hover: rgba(255, 255, 255, 0.1);
+
+  /* Text */
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
 }
 
-/* カスタムユーティリティクラス */
-.frosty-card {
-  @apply bg-white/15 backdrop-blur-2xl border border-white/25 shadow-xl;
+/* Section divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(148, 163, 184, 0.15),
+    transparent
+  );
 }
 
-.frosty-button {
-  @apply bg-cyan-400/30 hover:bg-cyan-400/40 backdrop-blur-lg border border-white/30 text-white;
-}
-
-.frosty-input {
-  @apply bg-white/10 backdrop-blur-lg border border-white/30 text-white placeholder:text-white/50;
-}
-
-/* テキストシャドウユーティリティ */
-.text-shadow-sm {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.text-shadow-lg {
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-/* スムーズなスクロール */
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* セレクション時の色 */
+/* Selection */
 ::selection {
-  background-color: rgba(34, 211, 238, 0.3);
+  background-color: rgba(148, 163, 184, 0.2);
   color: white;
 }
 
-/* スクロールバーのスタイル（Webkit系ブラウザ） */
+/* Scrollbar (Webkit) */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(34, 211, 238, 0.5);
-  border-radius: 4px;
+  background: rgba(100, 116, 139, 0.4);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(34, 211, 238, 0.7);
+  background: rgba(100, 116, 139, 0.6);
 }
