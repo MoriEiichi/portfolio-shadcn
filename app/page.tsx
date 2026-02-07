@@ -15,6 +15,7 @@ import {
   Palette,
   Component,
   Workflow,
+  Mail,
 } from "lucide-react";
 import { Nav } from "@/components/Nav";
 import { FadeIn } from "@/components/FadeIn";
@@ -93,17 +94,31 @@ export default function PlaywrightPortfolio() {
           </FadeIn>
 
           <FadeIn delay={0.4}>
-            <a
-              href="https://github.com/MoriEiichi/my-playwright-test"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              <Button className="bg-white text-slate-950 hover:bg-slate-200 font-semibold px-6 py-2.5 transition-colors">
-                <Github className="w-4 h-4 mr-2" />
-                ソースコード
-              </Button>
-            </a>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://github.com/MoriEiichi/my-playwright-test"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button className="bg-white text-slate-950 hover:bg-slate-200 font-semibold px-6 py-2.5 transition-colors">
+                  <Github className="w-4 h-4 mr-2" />
+                  ソースコード
+                </Button>
+              </a>
+              <a
+                href="mailto:mori@morieiichi.com"
+                className="inline-block"
+              >
+                <Button
+                  variant="outline"
+                  className="bg-transparent border-white/[0.06] hover:border-white/[0.1] hover:bg-white/[0.03] text-slate-300 font-semibold px-6 py-2.5 transition-colors"
+                >
+                  <Mail className="w-4 h-4 mr-2" />
+                  メール
+                </Button>
+              </a>
+            </div>
           </FadeIn>
         </div>
       </section>
@@ -312,14 +327,22 @@ export default function PlaywrightPortfolio() {
         <div className="max-w-5xl mx-auto px-6 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
             <p>&copy; {new Date().getFullYear()} Eiichi Mori</p>
-            <a
-              href="https://github.com/MoriEiichi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-slate-300 transition-colors"
-            >
-              <Github className="w-4 h-4" />
-            </a>
+            <div className="flex gap-4">
+              <a
+                href="https://github.com/MoriEiichi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-slate-300 transition-colors"
+              >
+                <Github className="w-4 h-4" />
+              </a>
+              <a
+                href="mailto:mori@morieiichi.com"
+                className="hover:text-slate-300 transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+              </a>
+            </div>
             <p>Built with Next.js, TypeScript & Tailwind CSS</p>
           </div>
         </div>
