@@ -35,10 +35,9 @@ export function Nav() {
             href="https://github.com/MoriEiichi/my-playwright-test"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
+            className="text-sm text-slate-400 hover:text-white transition-colors"
           >
             <Github className="w-4 h-4" />
-            <span className="hidden sm:inline">GitHub</span>
           </a>
         </div>
       </div>
