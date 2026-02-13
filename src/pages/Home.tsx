@@ -1,5 +1,3 @@
-"use client";
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog";
@@ -52,7 +50,7 @@ const learningPoints = [
   "品質保証の自動化の重要性を深く理解",
 ];
 
-export default function PlaywrightPortfolio() {
+export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden">
       {/* Background orbs — large, diffused, very low opacity */}
@@ -343,7 +341,7 @@ export default function PlaywrightPortfolio() {
                 <Mail className="w-4 h-4" />
               </a>
             </div>
-            <p>Built with Next.js, TypeScript & Tailwind CSS</p>
+            <p>Built with React, TypeScript & Tailwind CSS</p>
           </div>
         </div>
       </footer>

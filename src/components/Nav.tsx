@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import { Github, Mail } from "lucide-react";
 
