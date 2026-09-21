@@ -24,13 +24,19 @@ export function Nav() {
         </span>
         <div className="flex items-center gap-4">
           <a
+            href="#works"
+            className="text-sm text-slate-400 hover:text-white transition-colors"
+          >
+            制作実績
+          </a>
+          <a
             href="mailto:mori@morieiichi.com"
             className="text-sm text-slate-400 hover:text-white transition-colors"
           >
             <Mail className="w-4 h-4" />
           </a>
           <a
-            href="https://github.com/MoriEiichi/my-playwright-test"
+            href="https://github.com/MoriEiichi"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-slate-400 hover:text-white transition-colors"
