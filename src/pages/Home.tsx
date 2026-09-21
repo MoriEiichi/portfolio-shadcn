@@ -128,7 +128,8 @@ export default function Home() {
       */}
       <section className="relative z-10 px-6 pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="max-w-3xl mx-auto">
-          <span className="inline-block text-xs font-medium tracking-widest uppercase text-slate-400 border border-white/[0.06] rounded-full px-4 py-1.5 mb-6">
+          {/* uppercase は付けない。付けると WordPress が WORDPRESS になる（2026-09-21に修正） */}
+          <span className="inline-block text-xs font-medium tracking-widest text-slate-400 border border-white/[0.06] rounded-full px-4 py-1.5 mb-6">
             WordPress 制作・カスタマイズ
           </span>
 
