@@ -467,7 +467,24 @@ export default function Home() {
               対応できる範囲と、想定の期間をお返しします。
             </p>
             <p className="text-base font-semibold text-white">
-              CrowdWorksかLancersからご用命ください
+              <a
+                href="https://crowdworks.jp/public/employees/25827"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 decoration-slate-500 hover:decoration-white transition-colors"
+              >
+                CrowdWorks
+              </a>
+              か
+              <a
+                href="https://www.lancers.jp/profile/mori_a1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 decoration-slate-500 hover:decoration-white transition-colors"
+              >
+                Lancers
+              </a>
+              からご用命ください
             </p>
           </FadeIn>
         </div>
