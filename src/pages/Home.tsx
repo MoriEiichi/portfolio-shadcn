@@ -5,7 +5,6 @@ import {
   Github,
   ExternalLink,
   Play,
-  Mail,
   Server,
   LayoutTemplate,
   Database,
@@ -162,15 +161,6 @@ export default function Home() {
               <Button className="bg-white text-slate-950 hover:bg-slate-200 font-semibold px-6 py-2.5 transition-colors">
                 <ArrowDown className="w-4 h-4 mr-2" />
                 制作実績を見る
-              </Button>
-            </a>
-            <a href="mailto:mori@morieiichi.com" className="inline-block">
-              <Button
-                variant="outline"
-                className="bg-transparent border-white/[0.06] hover:border-white/[0.1] hover:bg-white/[0.03] text-slate-300 font-semibold px-6 py-2.5 transition-colors"
-              >
-                <Mail className="w-4 h-4 mr-2" />
-                お問い合わせ
               </Button>
             </a>
           </div>
@@ -476,12 +466,9 @@ export default function Home() {
               ご希望のページ構成や参考にされているサイトがあれば、あわせてお知らせください。
               対応できる範囲と、想定の期間をお返しします。
             </p>
-            <a href="mailto:mori@morieiichi.com" className="inline-block">
-              <Button className="bg-white text-slate-950 hover:bg-slate-200 font-semibold px-6 py-2.5 transition-colors">
-                <Mail className="w-4 h-4 mr-2" />
-                メールで問い合わせる
-              </Button>
-            </a>
+            <p className="text-base font-semibold text-white">
+              CrowdWorksかLancersからご用命ください
+            </p>
           </FadeIn>
         </div>
       </section>
@@ -500,13 +487,6 @@ export default function Home() {
                 aria-label="GitHub"
               >
                 <Github className="w-4 h-4" />
-              </a>
-              <a
-                href="mailto:mori@morieiichi.com"
-                className="hover:text-slate-300 transition-colors"
-                aria-label="メール"
-              >
-                <Mail className="w-4 h-4" />
               </a>
             </div>
             <p>WordPress 制作・カスタマイズ／東京</p>

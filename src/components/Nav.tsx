@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Github, Mail } from "lucide-react";
+import { Github } from "lucide-react";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -28,12 +28,6 @@ export function Nav() {
             className="text-sm text-slate-400 hover:text-white transition-colors"
           >
             制作実績
-          </a>
-          <a
-            href="mailto:mori@morieiichi.com"
-            className="text-sm text-slate-400 hover:text-white transition-colors"
-          >
-            <Mail className="w-4 h-4" />
           </a>
           <a
             href="https://github.com/MoriEiichi"
