@@ -143,13 +143,13 @@ export default function Home() {
           </h2>
 
           <p className="text-base text-slate-400 leading-relaxed mb-8 max-w-2xl">
-            フリーランスでWordPressの制作・カスタマイズを約10年、累計15件以上手がけてきました。
+            フリーランスでWordPressの制作・カスタマイズを10年以上、累計15件以上手がけてきました。
             制作会社を通さない直接のやり取りで、サーバーの設定から公開までを一人で担当します。
             納品して終わりではなく、公開後の更新や保守を継続してお引き受けした案件もあります。
           </p>
 
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500 mb-10">
-            <span>WordPress歴 約10年</span>
+            <span>WordPress歴 10年以上</span>
             <span className="text-slate-700">/</span>
             <span>累計15件以上</span>
             <span className="text-slate-700">/</span>
