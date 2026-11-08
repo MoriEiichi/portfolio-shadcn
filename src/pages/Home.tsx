@@ -1,10 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog";
 import {
   Github,
   ExternalLink,
-  Play,
   Server,
   LayoutTemplate,
   Database,
@@ -358,97 +356,6 @@ export default function Home() {
               </Card>
             </FadeIn>
           </div>
-        </div>
-      </section>
-
-      <div className="section-divider max-w-5xl mx-auto" />
-
-      {/* テスト自動化（Playwright） */}
-      <section className="relative z-10 px-6 py-20 md:py-28">
-        <div className="max-w-5xl mx-auto">
-          <FadeIn>
-            <h3 className="font-display text-2xl font-bold tracking-tight text-white mb-3">
-              テスト自動化の取り組み
-            </h3>
-            <p className="text-sm text-slate-400 mb-10 max-w-2xl">
-              画面の操作を自動で確認する仕組み（E2Eテスト）を Playwright で構築し、GitHub Actions 上で実行できるところまで作りました
-            </p>
-          </FadeIn>
-
-          <FadeIn delay={0.1}>
-            <Card className="bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] hover:border-white/[0.1] transition-colors">
-              <CardContent className="p-6 md:p-8">
-                <div className="flex flex-wrap gap-2 mb-5">
-                  {["TypeScript", "Playwright", "GitHub Actions"].map((t) => (
-                    <span
-                      key={t}
-                      className="text-xs text-slate-300 bg-white/[0.03] border border-white/[0.06] rounded-full px-3 py-1"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-
-                <p className="text-sm text-slate-400 leading-relaxed mb-5">
-                  ブラウザ操作の自動テストを書き、CI上で走らせる構成を実装しました。
-                  フォームの送信や画面の表示崩れといった「毎回手で確かめている確認」を自動化するための土台です。
-                  WordPressサイトの納品前の確認にも応用できると考えています。
-                </p>
-
-                <p className="text-xs text-slate-500 leading-relaxed mb-6">
-                  補足：個人で作った学習プロジェクトで、<strong className="text-slate-400 font-medium">WordPress案件でこの仕組みを納品した実績はまだありません</strong>。
-                  CIのうちデプロイの工程は未接続です。できることの範囲としてご覧ください。
-                </p>
-
-                <div className="flex flex-wrap gap-3">
-                  <Dialog>
-                    <DialogTrigger asChild>
-                      <Button
-                        variant="outline"
-                        className="bg-transparent border-white/[0.06] hover:border-white/[0.1] hover:bg-white/[0.03] text-slate-300 transition-colors"
-                      >
-                        <Play className="w-4 h-4 mr-2" />
-                        動作の動画を見る
-                      </Button>
-                    </DialogTrigger>
-                    <DialogContent className="max-w-2xl bg-slate-900 border-white/[0.06]">
-                      <div className="w-full flex flex-col items-center">
-                        <video
-                          controls
-                          style={{
-                            maxWidth: "100%",
-                            maxHeight: "70vh",
-                            background: "#000",
-                          }}
-                        >
-                          <source
-                            src="/video/testing-movie-with-playwright.webm"
-                            type="video/webm"
-                          />
-                          お使いのブラウザは動画再生に対応していません。
-                        </video>
-                      </div>
-                    </DialogContent>
-                  </Dialog>
-
-                  <a
-                    href="https://github.com/MoriEiichi/my-playwright-test"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block"
-                  >
-                    <Button
-                      variant="outline"
-                      className="bg-transparent border-white/[0.06] hover:border-white/[0.1] hover:bg-white/[0.03] text-slate-300 transition-colors"
-                    >
-                      <Github className="w-4 h-4 mr-2" />
-                      ソースコード
-                    </Button>
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
-          </FadeIn>
         </div>
       </section>
 
