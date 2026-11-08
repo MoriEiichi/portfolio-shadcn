@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import {
   Github,
   ExternalLink,
+  FileText,
   Server,
   LayoutTemplate,
   Database,
@@ -238,6 +239,28 @@ export default function Home() {
               </FadeIn>
             ))}
           </div>
+
+          <FadeIn delay={0.3}>
+            <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-3">
+              <a
+                href="/works/morieiichi-works.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button
+                  variant="outline"
+                  className="bg-transparent border-white/[0.12] hover:border-white/[0.2] hover:bg-white/[0.03] text-slate-200 transition-colors"
+                >
+                  <FileText className="w-4 h-4 mr-2" />
+                  制作実績の資料を見る（PDF）
+                </Button>
+              </a>
+              <p className="text-xs text-slate-500">
+                上の3件を、使用技術と担当範囲まで含めてA4・4ページにまとめたものです（2.5MB）
+              </p>
+            </div>
+          </FadeIn>
 
           <FadeIn delay={0.3}>
             <div className="mt-8 bg-white/[0.02] border border-white/[0.06] rounded-lg px-6 py-5">
