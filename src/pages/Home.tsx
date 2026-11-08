@@ -508,6 +508,17 @@ export default function Home() {
             </div>
             <p>WordPress 制作・カスタマイズ／東京</p>
           </div>
+          <p className="mt-6 text-center text-xs text-slate-600">
+            このサイトはアクセス解析に Google アナリティクスを使用しており、Cookie によって閲覧のデータを収集しています（個人を特定する情報は含みません）。
+            <a
+              href="https://policies.google.com/technologies/partner-sites?hl=ja"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-slate-400 transition-colors"
+            >
+              Google によるデータの使用について
+            </a>
+          </p>
         </div>
       </footer>
     </div>
